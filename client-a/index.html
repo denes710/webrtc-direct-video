@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebRTC Direct Communication - Client A</title>
+</head>
+<body>
+    <h2>WebRTC Communication</h2>
+    <video id="localVideo" autoplay muted playsinline style="width: 300px;"></video>
+    <video id="remoteVideo" autoplay playsinline style="width: 300px;"></video>
+    <textarea id="offer" placeholder="Offer/Answer" rows="10" cols="50"></textarea>
+    <button id="startCall">Start Call</button>
+    <button id="setRemote">Set Remote Description</button>
+    <textarea id="iceCandidates" placeholder="ICE Candidates" rows="10" cols="50"></textarea>
+    <div>
+        <input type="text" id="message" placeholder="Type a message" />
+        <button id="sendMessage">Send Message</button>
+    </div>
+    <div>
+        <h3>Received Message:</h3>
+        <p id="receivedMessage"></p>
+    </div>
+    <script type="module" src="webrtc.js"></script>
+</body>
+</html>
